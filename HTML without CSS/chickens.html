@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Signup</h1>
+    <!--Search query example-->
+    <form action="https://www.youtube.com/results">
+        <p>
+            <label for="searchquery">Search Our Videos here!</label>
+            <input type="url" name="search_query" placeholder="Search" id="searchquery" required>
+            <!--Name tells action what to do-->
+            <button>Search Now</button>
+        </p>
+    </form>
+    <!--Signup Example-->
+    <form action="https://www.google.com">
+        <p>
+            <label for="username">Enter A Username:</label>
+            <input type="text" id="username" placeholder="Username" name="username" minlength="6" maxlength="20"
+                required>
+        </p>
+        <p>
+            <label for="password">Enter A Password:</label>
+            <input type="password" id="password" placeholder="Password" name="password" minlength="8" maxlength="20"
+                required>
+        </p>
+        <p>
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" placeholder="Password" name="password">
+        </p>
+        <p>
+            <label for="birthday">Enter Your Birthday</label>
+            <input type="date" id="birthday" name="birthday">
+        </p>
+        <p>
+            <label for="age-select">Enter Your Age</label>
+            <input type="number" id="age-select" placeholder="Age" name="age" min="0" max="100">
+        </p>
+        <label for="gender-select">Select your Gender</label>
+        <select name="gender" id="gender-select">
+            <option value="">--Select an Option--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <p>
+            <button type="submit">Sign Up Now!</button>
+        </p>
+    </form>
+    <form action="send_data_to_server">
+        <p>Have you read and agreed to the terms of service and privacy agreement?</p>
+        <label for="tos">Yes I have read and agreed the terms of service</label>
+        <input type="checkbox" name="agree_tos" id="tos">
+        <label for="pa">Yes I have read and agreed to the privacy agreement</label>
+        <input type="checkbox" name="agree_pa" id="pa">
+    </form>
+    <form>
+        <p>Would you like to receive emails for future deals and promos?</p>
+        <label for="apromo">Yes I would</label>
+        <input type="radio" name="promo" id="apromo" value="agree">
+        <label for="bpromo">No I wouldn't</label>
+        <input type="radio" name="promo" id="bpromo" value="decline">
+    </form>
+    <p>Volume Settings</p>
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" min="0" max="100" name="volume_level" step="10" value="50">
+    <p>
+        <label for="commentary">Tell us your experience:</label>
+        <textarea name="commentary" id="commentary" cols="30" rows="10">Tell us how you feel.....</textarea>
+    </p>
+</body>
+
+</html>
